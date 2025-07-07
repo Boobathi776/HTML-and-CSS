@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS trial</title>
+    <link rel="stylesheet" type="text/css" href="style/selector.css">
+</head>
+<body>
+    <a href="" title="nothing">firstlink</a>
+    <a href="">second link</a>
+    <h1 class="heading">WELCOME</h1>
+    <h1 id="t_heading" class="heading">Vanakam</h1>
+    <menu type="toolbar">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </menu>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <span>Lorem.</span><br>
+    <data value="nothing">nothing</data>
+
+    <p>Lorem ipsum, dolor sit amet consectetur <span> adipisicing elit.</span> Eos, distinctio.</p>
+    <p>Lorem ipsum dolor sit amet <ins><span>vanakam</span></ins>consectetur adipisicing elit. Soluta, alias!</p>
+
+    <div>
+        <h2>title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat velit cumque sed ratione eos magnam id, officia maiores fugiat.            
+        </p>
+        <p>Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+    <!-- value selectors in attribute selector -->
+     
+    <a href="https://example.com">example.com</a>
+
+    <!-- space separated list of words -->
+     <p class="special">Lorem ipsum dolor sit amet.</p>
+     <p class="none special super">Lorem ipsum dolor sit amet consectetur.</p>
+
+     <div lang="en">Lorem ipsum dolor sit amet. </div>
+     <div lang="en-US">Lorem ipsum dolor sit amet consectetur.
+     </div>
+
+     <!-- sub string matching attribute -->
+      <ul>
+      <li class="box-warning">Warning</li>   <!--starts with 'box-' -->
+      <li class="box-error">Error</li>       <!--starts with 'box-' -->
+
+      <li class="alert-box">Alert</li>       <!--ends with '-box' -->
+      <li class="error-box">Error</li>       <!--ends with '-box' -->
+
+      <li class="one-warning">Warning</li>   <!--contains 'box' -->
+      <li class="alert-one">Alert</li>       <!--contains 'box' -->
+      <li class="myone-item">Item</li>       <!--contains 'box' -->
+      </ul>
+      
+      <button type="button" value="buttom">Click me</button>
+
+      <input type="text" placeholder="please enter a text..">
+</body>
+</html>
