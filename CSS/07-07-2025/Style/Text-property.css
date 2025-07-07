@@ -1,0 +1,159 @@
+#first
+{
+    text-align: left;
+}
+
+#second
+{
+    text-align: center;
+}
+
+#third
+{
+    text-align: right;
+}
+
+#fourth
+{
+    text-align: justify;
+}
+
+/* used to align a last line of the paragraph 
+text-align-last : right | justify | center */
+#first1
+{
+    text-align-last: center;
+}
+
+#second1
+{
+    text-align-last: right;
+}
+
+#third1
+{
+    text-align-last: justify;
+}
+
+/* direction and unicode-bidi property< */
+/* direction : ltr | rtl | inherit */
+/* unicode-bidi : initial | normal | embed | bidi-override | isolate | isolate-override | plaintext | inherit */
+
+.box {
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .ltr-normal {
+      direction: ltr;
+      unicode-bidi: normal;
+    }
+
+    .rtl-normal {
+      direction: rtl;
+      unicode-bidi: normal;
+    }
+
+    .ltr-embed {
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    .rtl-embed {
+      direction: rtl;
+      unicode-bidi: embed;
+    }
+
+    .ltr-override {
+      direction: ltr;
+      unicode-bidi: bidi-override;
+    }
+
+    .rtl-override {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+
+    .ltr-isolate {
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+
+    .rtl-isolate {
+      direction: rtl;
+      unicode-bidi: isolate;
+    }
+
+    .ltr-isolate-override {
+      direction: ltr;
+      unicode-bidi: isolate-override;
+    }
+
+    .rtl-isolate-override {
+      direction: rtl;
+      unicode-bidi: isolate-override;
+    }
+
+    .plaintext {
+      direction: rtl;
+      unicode-bidi: plaintext;
+    }
+
+/* vertical-align : baseline | text-top | text-bottom | sub | super  */
+
+span
+{
+    vertical-align: sub ;
+}
+
+/* text-decoration-line : overline | line-through | underline | overline underline */
+/* text-decoration-color : color */
+
+#p1
+{
+    text-decoration-line: line-through underline overline;
+    text-decoration-color: black;
+}
+/* text-decoration-style : solid | double | dotted | dashed | wavy |  */
+
+#p1
+{
+    text-decoration-line: line-through underline overline;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+/* text-decoration-thickness : auto | px | % | vw  */
+/* text-decoration : none  -> to remove underline form the <a> */
+/* text-decoration : line color style  thickness */
+/* oreder of value putting doesn't matter */
+#p2
+{
+    text-decoration: 5px black dotted line-through;
+}
+
+/* text-transform : none | uppercase | lowercase | capitalize | inital | inherit */
+#p3
+{
+    text-transform: capitalize;
+}
+
+/* text-indent : length(number value) | inherit | initial  (used to give space when the paragraph start)*/
+/* letter-spacing : normal | lengh(units number value) | inherit | initial  */
+/* line-height : normal | number | length | % | initial | inherit  */
+/* white-space : normal | nowrap | pre | pre-line | pre-wrap | initial | inherit */
+/* word-spacing : normal | length | inital | inherit */
+
+
+/* text-shadow : horizontal_shadow_number vertical_shoadow_number blur_effect_number color  */
+#myname
+{
+    text-shadow: 2px 0.0px 4px rgb(207, 13, 13),3px 4px 5px gray,4px 4px 6px maroon;
+}
+
+#font-fam
+{
+    font-family:cursive,Arial;
+}
