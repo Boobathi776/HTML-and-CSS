@@ -1,0 +1,127 @@
+a
+{
+    background-color: rgb(209, 255, 240);
+}
+
+.heading
+{
+    color: coral;
+}
+
+#t_heading
+{
+    color: darkviolet;
+}
+
+/* immediate child of h1 tag that must be menu */
+h1+menu
+{
+    background-color: bisque;
+}
+
+p,span,data{
+    background-color: rgb(182, 228, 137);
+}
+
+/* Selects any <span> that is nested anywhere inside a <p>, regardless of how deep. */
+p span{
+    color: rgb(189, 0, 247);
+}
+/* Selects only the <span> elements that are direct children of a <p>. */
+p>span{
+    color: chocolate;
+}
+
+/* selects all <p> element that sibling of h1 not like h1+p  and only with the same parent */
+h2 ~ p 
+{
+    color: white;
+    background-color: black;
+}
+
+
+/* attribute selector */
+/* 1. [attr]
+Selects elements that have the given attribute, regardless of its value.
+ */
+ a[title] {
+  color: red;
+}
+
+/*  2. [attr=value]
+ Selects elements where the attribute’s value is exactly equal to the given value. */
+
+a[href="https://example.com"] 
+{
+  color: green;
+}
+
+/* 3. [attr~=value] (Tilde Equal)
+Selects elements whose attribute value is a space-separated list of words including the given word.
+ */
+p[class~="special"] {
+  font-weight: bold;
+}
+
+/* 4. [attr|=value] (Pipe Equal)
+Matches elements whose attribute value is:
+Exactly the given value
+OR starts with the value followed by a hyphen (-) */
+
+div[lang|="en"] {
+  background-color: rgb(255, 0, 0);
+}
+
+/* substring matching attribute selectors */
+/*  1. [attr^=value] → Starts with */
+li[class^="box-"] {
+  color: red;
+}
+
+/* 2. [attr$=value] → Ends with */
+li[class$="-box"]
+{
+    color: green;
+}
+
+/* 3. [attr*=value] → Contains */
+li[class*="one"] {
+  color: blue;
+}
+
+/* Pseudo-Classes (:)
+A pseudo-class targets an element based on its state or context — 
+such as when it's hovered, focused, the first child, etc. */
+
+button:hover {
+  background-color: rgb(166, 179, 51);
+}
+input:focus {
+  border: 8px solid green;
+}
+li:first-child {
+  font-weight: bold;
+}
+
+/*  Pseudo-Elements (::)
+A pseudo-element lets you style specific parts of an element, like the first letter, line, 
+or insert generated content before or after an element. */
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+p::before {
+  content: "👉 ";
+}
+
+p::after
+{
+  content: "🖖";
+  font-size: 200%;
+}
+
+input::placeholder {
+  color: rgb(124, 6, 6);
+  font-style: italic;
+}
