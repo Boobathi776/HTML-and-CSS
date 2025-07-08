@@ -100,3 +100,30 @@ p:first-of-type
 {
     background-color: lightblue;
 }
+
+/* Selects the element that gets focus. Most used for form elements */
+
+input:focus
+{
+    outline: 6px solid red;
+}
+
+/* Focusing the button with a mouse or touch shows a drop shadow. */
+button:focus {
+  box-shadow: 1px 1px 6px rgba(255, 0, 0, 0.5);
+}
+
+/* Focusing the button with a keyboard shows a solid red line. */
+button:focus-visible {
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+
+/* focus within used to focus only that particular input other look like dull */
+form:focus-within
+{
+    background-color: antiquewhite;
+    color: black;
+}
+  
+
