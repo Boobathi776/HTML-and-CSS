@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pseduo class */
+a:link{
+color: red;
+}
+
+a:active
+{
+    color:green;
+}
+
+a:hover
+{
+    color: yellow;
+}
+
+a:visited
+{
+    color: purple;
+}
+
+/* Selects any <a> or <area> element with an href attribute */
+a:any-link
+{
+    border: 6px solid lime;
+}
+
+img
+{
+    border: 10px solid black ;
+}
+
+/* input fields that filled by the browser data */
+input:autofill
+{
+    outline: 3px solid rgb(5, 220, 248);
+}
+/* input fields that already checked or currently checked  checkbox and redio button */
+
+input:checked
+{
+    outline: 5px solid blue;
+}
+ /* only the style applies to the defaultly seleceted values only 
+ not selected by the user */
+
+input:default
+{
+    box-shadow: 0 0 2px 2px red;
+}
+
+/* Selects any element with the specified text direction */
+p:dir(ltr)
+{
+    color: blue;
+    background-color: beige;
+}
+
+/* Selects any element that is disabled. Most used for form elements */
+input:disabled
+{
+    background-color: yellow;
+    color: black;
+}
+
+/* Selects any element that has no children (including text nodes) */
+div
+{
+    width: 500px;
+    height: 500px;
+    border: 10px solid red;
+}
+div:empty
+{
+    background-color: green;
+}
+
+/* Selects any element that is enabled. Most used for form elements */
+:enabled
+{
+    background-color: lightgray;
+}
+
+/* Represents the first page of a printed document (used with the @page rule) */
+
+/* Selects the element that is the first child of its parent (among a group of sibling elements) */
+p:first-child
+{
+    border: 10px solid brown;
+    margin: 0 auto;
+}
+
+/* Selects the first element of its type among a group of sibling elements */
+p:first-of-type
+{
+    background-color: lightblue;
+}
