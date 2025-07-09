@@ -1,0 +1,69 @@
+#header-logo img
+{
+    display: inline-block;
+    width: 6vw;
+    height: 6vw;
+    padding: 10px;
+}
+
+header{
+    width: 100%;
+    height: 8vw;
+    position:relative;
+    border-top-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    overflow: visible;
+    color: white;
+    background-color: black;
+}
+
+#header-logo
+{
+    width:calc(50vw-10px);
+    position: absolute;
+    top: 0;
+    left: 2vw;
+}
+
+nav
+{
+    position:absolute;
+    right: 2vw;
+    top: 2vw;
+}
+
+#header-logo h2
+{
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 3vw;
+    position: absolute;
+    left: 14vw;
+}
+
+nav ul,#header-logo,nav
+{
+    display : inline-block;
+}
+
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 4vw;
+    text-align: center;
+}
+
+/* effects */
+nav ul li a:hover
+{
+    background-color: gray;
+    padding: 1vw;
+    border-radius: 1vw;
+}
