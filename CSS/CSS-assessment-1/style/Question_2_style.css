@@ -1,0 +1,111 @@
+/* Create a horizontal navigation menu with four links.
+    a) A horizontal bar where links are evenly spaced. When hovered, they change appearance.
+    b) Highlight the current active link using a different style (e.g., underline or different color).
+*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    padding: 2vw;
+    width: 80%;
+    height: 4vw;
+    margin: 0 auto;
+}
+
+hr
+{
+    width: 80%;
+    margin:0 auto;
+}
+
+h2
+{
+    /* display: inline-block; */
+    float: left;
+    margin-top: 0.5vh;
+    font-size: 2em;
+    font-family: cursive;
+    text-shadow: 0.1em 0.1em 0.6vw violet,0 0 0.5vw rgb(94, 3, 94);
+}
+
+nav
+{
+    /* display: inline-block; */
+    float: right;
+    margin-top: 1vh;
+}
+
+nav ul li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a
+{
+    /* text-decoration: 0.1rem wavy underline green ; */
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    background-color: black;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    margin-right: 4vw;
+    box-shadow: 0 0 0.5vw 0.5vw violet;
+}
+
+nav ul li a:hover
+{
+    background-color: gray;
+    color:rgb(243, 242, 242);
+}
+
+header::after
+{
+    content: "            ";
+    display: table;
+    clear: both;
+}
+
+#link-section
+{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#link-section menu li 
+{
+    margin: 1vw;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#links li a
+{
+    color: green;
+    text-decoration: 2px solid underline;
+}
+
+#links li a:active
+{
+    color: black;
+    background-color: rgba(223, 85, 85, 0.623);
+    border-radius: 0.3vw;
+    padding: 1vw;
+}
+
+#links li a:hover
+{
+    color: rgb(22, 0, 146);
+}
+
+#links li a:visited{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}

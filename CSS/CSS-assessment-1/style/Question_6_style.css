@@ -1,0 +1,39 @@
+/* 
+Create a full-page landing section that meets the following requirements:
+Expected Output:
+a) The section must take up 100% of the browser’s width and height using vw and vh.
+b) Add a linear gradient background using two hsl() colors.
+c) Inside the section, include a responsive heading whose font size is set using 5vw.
+d) Below the heading, add a text block that is:
+     1) 80% wide
+  2) horizontally centered
+  3) Uses hsla() for a semi-transparent text color
+*/
+
+#overall-section
+{
+    width: 100vw;
+    height: auto;
+    display: block;
+    background: linear-gradient(to left,hsla(100, 82%, 40%, 0.918),hsla(41, 90%, 48%, 0.945));
+}
+
+#overall-section h2{
+    font-size: 5vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+p
+{
+    width: 80%;
+    margin: 1vw auto;
+    text-align: justify;
+    text-align-last: center;
+    text-indent: 2vw;
+    line-height: 3vw;
+    font-family: cursive;
+    font-size: 1vw;
+    color: hsla(100, 43%, 1%,0.5);
+    /* opacity: 0.5; */
+}
