@@ -1,0 +1,35 @@
+section
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Add a "New" label before each heading and a "Featured" label 
+after the heading that has a special class.
+ */
+.sub-heading::before
+{
+    content: "New " ;
+    color: rgb(248, 43, 7);
+    text-decoration: underline 0.2vw wavy;  ;
+}
+
+.sub-heading::after{
+    content: "  Featured";
+    color: rgb(0, 17, 255);
+    text-decoration: underline  0.2vw double;
+}
+
+#main-part p{
+    text-align: justify;
+}
+
+
+

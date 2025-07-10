@@ -1,0 +1,53 @@
+/* 
+Create a table of 5 rows and Style it using only CSS :
+Expected Output:
+a) Odd rows are light gray.
+b) Even rows are black.
+c) On hover, highlight the entire row with a soft blue background.
+ */
+
+ *
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ table,td,th
+ {
+    border: 0.3vw solid rgb(248, 243, 243);
+    border-collapse: collapse;
+    padding: 1vw;
+    table-layout: fixed;
+    width: 80%;
+    margin: 5vw auto;
+ }
+
+ table caption
+ {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+ }
+
+thead
+{
+    background-color: rgb(243, 188, 6);
+}
+
+ tbody tr:nth-child(odd)
+ {
+    background-color: lightgrey;
+ }
+
+ tbody tr:nth-child(even),tfoot
+ {
+    background-color: black;
+    color: white;
+ }
+
+ tbody tr:hover,tfoot tr:hover
+ {
+    background-color: rgba(0, 195, 255, 0.548);
+    color: black;
+ }

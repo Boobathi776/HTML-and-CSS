@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#name
+{
+    width: 20%;
+    height: 2vw;
+    background-color: rgba(41, 40, 40, 0.199);
+}
+
+#input label
+{
+    visibility: hidden;
+}
+
+#input:hover label
+{
+    visibility: visible;
+}
+
+
+input:focus
+{
+    visibility: visible;
+    background-color: rgba(56, 55, 55, 0.288);
+}
+
