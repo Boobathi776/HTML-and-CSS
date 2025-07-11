@@ -1,0 +1,42 @@
+header
+{
+    background-color: beige;
+    width: 80%;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#left-header
+{
+    /* width: 50%; */
+    /* height: auto; */
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left-header ul
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#left-header li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#left-header a
+{
+    text-decoration: none;
+}
+
+#right-header
+{
+    width: 50%;
+    display: flex;
+    justify-items: end;
+    align-items: center;
+}
