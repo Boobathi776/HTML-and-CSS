@@ -35,6 +35,7 @@ header
     position: fixed;
     top: 0;
     left: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #left-header

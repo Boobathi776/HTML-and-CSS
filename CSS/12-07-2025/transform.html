@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+        background-color: coral;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        transition: transform 0.5s ease;
+      }
+
+      /* Rotate on hover */
+      .box:hover {
+        transform: rotate(45deg);
+      }
+
+      .origin-center {
+        transform-origin: center center; /* default */
+      }
+
+      .origin-left {
+        transform-origin: left center;
+        background-color: steelblue;
+      }
+
+      .origin-bottom-right {
+        transform-origin: bottom right;
+        background-color: seagreen;
+      }
+    </style>
+
+  </head>
+  
+  <body>
+    <div class="box origin-center">Center</div>
+    <div class="box origin-left">Left</div>
+    <div class="box origin-bottom-right">Bottom Right</div>
+  </body>
+
+</html>
