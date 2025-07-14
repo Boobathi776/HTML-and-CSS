@@ -1,0 +1,56 @@
+img
+{
+    max-width: 100%;
+    height: auto;
+    transition: transform 2s;
+    box-shadow: 2px 2px 15 0 black;
+}
+
+img:hover
+{
+    transform: scale(1.5,1.5);
+    transform-origin: center center;
+}
+
+
+.skew-banner
+{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(10deg);
+    background-color: orange;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+}
+
+span
+{
+    transform:skewX(-10deg);
+}
+
+button
+{
+    width: 10vw;
+    height: 3vh;
+    border-radius: 1vw;
+    background-color:rgb(143, 49, 49);
+    background: linear-gradient(to right,green,orange);
+}
+
+button:hover
+{
+        animation: color-change 3s ease-in-out 0s;
+}
+
+@keyframes color-change
+{
+    0%{background:linear-gradient(to right,violet,black);
+    transform: scaleX(1);}
+    100%{background:linear-gradient(to right,green,orange);
+    transform: scaleX(1.3);}
+}
+
