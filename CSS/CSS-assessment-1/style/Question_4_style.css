@@ -39,8 +39,17 @@ thead
  {
     background-color: lightgrey;
  }
+ 
+/* before 
+ tbody tr:nth-child(even),tfoot 
+ {
+    background-color: black;
+    color: white;
+ }
+*/
 
- tbody tr:nth-child(even),tfoot
+/* after */
+ tbody tr:nth-child(even),tfoot tr
  {
     background-color: black;
     color: white;
