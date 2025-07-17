@@ -29,6 +29,8 @@ section
 #Boobathi
 {
     margin-top: 90px;
+    scroll-padding-left: 100px;
+    scroll-padding-right: 100px;
 }
 nav ul
 {
