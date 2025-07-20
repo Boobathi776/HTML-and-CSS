@@ -43,3 +43,8 @@ header
     /* the parent element should not be overflow:hidden or overflow:auto it will affect the sticky working */
     /* overflow: hidden; */
 }
+
+footer
+{
+    background-color: red;
+}
